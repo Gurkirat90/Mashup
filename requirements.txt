@@ -1,6 +1,5 @@
-
 flask
 yt-dlp
 pydub
-moviepy
+audioop-lts
 gunicorn
