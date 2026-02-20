@@ -52,8 +52,8 @@ def create_mashup(singer, num, duration, output_name):
 
 
 def send_email(receiver_email, file_path):
-    sender_email = "your_email@gmail.com"
-    sender_password = "your_app_password"
+    sender_email = os.environ.get("EMAIL_USER")
+    sender_password = os.environ.get("EMAIL_PASS")
 
     msg = EmailMessage()
     msg["Subject"] = "Your Mashup File"
